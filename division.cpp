@@ -76,7 +76,7 @@ void resta_bits(int *&a,int *m,int n ){
 	delete [] bits_1;
 	
 }
-void divisor_vinarios(int *&a,int *&q,int *&m,int n,int divisor){
+void divisor_binarios(int *&a,int *&q,int *&m,int n,int divisor){
 	a=new int[n];
 	for (int i=0;i<n;i++){
 		a[i]=0;
@@ -141,7 +141,7 @@ int main(){
 	imprimir(n,m);
 	cout<<("\n");
 	cout<<"-----------------------\n";
-	divisor_vinarios(a,q, m,n,divisor);
+	divisor_binarios(a,q, m,n,divisor);
 	imprimir(n,q);
 	cout<<" = "<<binario_entero(n,q)<<" (Resultado)";
 	cout<<("\n\n");
